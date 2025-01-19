@@ -1,7 +1,7 @@
 export default function ComponentName() {
   return (
     <>
-        <p>Aqui é o componente principal da rota "rotas-aninhadas"</p>
+        <h2>Aqui é o componente principal da rota "rotas-aninhadas"</h2>
     </>
   )
 }
