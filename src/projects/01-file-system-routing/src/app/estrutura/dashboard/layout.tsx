@@ -6,7 +6,8 @@ interface DefaultLayoutProps {
 
 export default function DefaultLayout({ children }: DefaultLayoutProps) {
   return (
-    <div className="bg-red-950 text-white w-full h-full">
+    <div className="bg-green-900">
+      <h2>Dashboard da aplicação.</h2>
       { children }
     </div>
   )
