@@ -1,5 +1,5 @@
 interface PokemonProps{
-  name: string,
+  name: string
 }
 
 export default async function MyComponent() {
@@ -11,7 +11,7 @@ export default async function MyComponent() {
     <>
       <h1>Pokemons</h1>
 
-      <ul className="bg-red-950 text-white">
+      <ul className="bg-red-950 text-white px-10 py-2 rounded-md">
         {pokemons.map((poke: PokemonProps) => (
           <li key={poke.name}>{poke.name}</li>
         ))}

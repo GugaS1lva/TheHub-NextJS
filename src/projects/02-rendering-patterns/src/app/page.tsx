@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CodeBlock, { fetchExample } from "./components/CodeBlock";
 
 export default function Home() {
   return (
@@ -25,33 +26,8 @@ export default function Home() {
       <hr />
       <h2>Fetch de Dados</h2>
       <p>No Next13+ foi adicionado uma nova sintaxe para buscar dados. Com a nova versão do Next, podemos fazer chamadas HTTP diretamente no corpo do nosso componente, simplesmente transformando-os em componentes assincronos:</p>
-        <pre className="bg-red-950 font-extrabold">
-          <code>
-            {`
-    interface PokemonProps{
-      name: string,
-    }
-
-    export default async function MyComponent() {
-      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
-      const data = await res.json()
-      const pokemons = data.results
-
-      return (
-        <>
-          <h1>Pokemons</h1>
-
-          <ul className="bg-red-950 text-white">
-            {pokemons.map((poke: PokemonProps) => (
-              <li key={poke.name}>{poke.name}</li>
-            ))}
-          </ul>
-        </>
-      )
-    }
-            `}
-          </code>
-        </pre>
+      
+      <CodeBlock code={fetchExample} language="tsx" />
     </main>
   );
 }
