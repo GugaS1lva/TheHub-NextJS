@@ -129,9 +129,9 @@ export default function Page() {
 
       {/* INSTALL AND CONFIGURE TW.TYPIGRAPHY
       <code>
+        - bun i -D @tailwindcss/typography
         - dentro de talwindconfig.css:
             plugins: [require("@tailwindcss/typography")],
-        - no terminal: bun i -D @tailwindcss/typography
         - nos componentes: className="prose"
       </code>
        */}
